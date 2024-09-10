@@ -1,0 +1,171 @@
+/* Reusable button styles */
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-service-button {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.add-service-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.form-submit-button {
+    padding: 8px 10px;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+}
+
+.form-submit-button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.edit-button {
+    background-color: #007bff;
+    color: white;
+}
+
+.edit-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Form styling */
+.service-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-field input,
+.form-field select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.form-field input:focus,
+.form-field select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Table styling */
+.service-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.service-table th,
+.service-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+.service-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.service-table td {
+    background-color: #fff;
+}
+
+.service-table tr:hover td {
+    background-color: #f9f9f9;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .service-form {
+        padding: 15px;
+    }
+
+    .service-table th,
+    .service-table td {
+        padding: 10px;
+    }
+}
+
+/* Add button container styling */
+.add-service-button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+/* Better form button spacing */
+.form-field button {
+    margin-top: 10px;
+}
+
+.service-table button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.service-table button:hover {
+    background-color: #0056b3;
+}
+
+/* Table row hover effects */
+.service-table tr {
+    transition: all 0.3s ease;
+}
+
+.service-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* General improvement for links in table cells */
+.service-table a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.service-table a:hover {
+    color: #0056b3;
+}

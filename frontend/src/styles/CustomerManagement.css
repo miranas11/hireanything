@@ -1,0 +1,124 @@
+.customer-management-container {
+    padding: 20px;
+    background-color: #fafafa;
+}
+
+.customer-management-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.customer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.customer-list li {
+    background-color: #fff;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.customer-list li:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.customer-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+.customer-header {
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+.customer-header span {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+}
+
+.customer-header:hover {
+    background-color: #f7f7f7;
+}
+
+/* Buttons styling */
+.customer-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.customer-actions button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Payment button (blue) */
+.customer-actions .payment-button {
+    background-color: #007bff;
+    color: white;
+}
+
+.customer-actions .payment-button:hover {
+    background-color: #0056b3;
+}
+
+/* Delete button (red) */
+.customer-actions .delete-button {
+    background-color: red;
+    color: white;
+}
+
+.customer-actions .delete-button:hover {
+    background-color: darkred;
+}
+
+.customer-details {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+    animation: dropdown 0.3s ease-in-out;
+}
+
+.payment-history {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+    animation: dropdown 0.3s ease-in-out;
+}
+
+@keyframes dropdown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.booking-history-item {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.booking-history-item p {
+    margin: 5px 0;
+}
